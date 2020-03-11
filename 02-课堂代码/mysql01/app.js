@@ -15,7 +15,7 @@ const upload = multer({ dest: path.join(__dirname, 'uploads/') });
 // 创建个 express 服务器
 const app = express();
 
-// 创建 mysql 数据库
+// 创建 mysql 数据库连接
 const connection = mysql.createConnection({
     // 本地数据库地址 (本地服务器固定写法)
     host: 'localhost',
